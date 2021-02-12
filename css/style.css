@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700,800&display=swap");
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ________________Обнуление_________________ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans";
+}
+/* ___________блок header___________________________ */
+.header {
+	background: url("../img/bg.png") center top / 100% no-repeat;
+	padding: 42px 0 0px 0;
+
+	border-bottom: 1px solid #e6e6e6;
+}
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+.header__content {
+	padding: 42px 0 71px 0;
+	text-align: center;
+}
+.header__logo {
+	margin-bottom: 219px;
+}
+.header__logo:hover {
+	padding-top: 40px;
+	background: url("../img/projeco-logo-black.png") center no-repeat;
+}
+.header__title h1 {
+	font-family: "Bebas";
+	font-weight: bold;
+	font-size: 55px;
+	text-transform: uppercase;
+	line-height: 116%;
+	letter-spacing: 5px;
+	color: #ffffff;
+	text-shadow: 3px 3px 1px #000;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.header__title span,
+.header__title span.corect {
+	display: inline-block;
+	width: 35px;
+	height: 5px;
+	background-color: #ffffff;
+	box-shadow: 1px 1px #000;
+	vertical-align: middle;
+	margin-bottom: 12px;
+}
+.header__title span::before,
+.header__title span::after {
+	content: "";
+	width: 20px;
+	height: 5px;
+	background: #000;
+	display: block;
+	box-shadow: 1px 1px #000;
+}
+.header__title span::before {
+	margin: -12px 0px 0px auto;
+}
+.header__title span::after {
+	margin: 19px 0px 0px auto;
+}
+.header__title span.corect::before {
+	margin: -13px auto 0px 0px;
+}
+.header__title span.corect::after {
+	margin: 19px auto 0px 0px;
+}
+
+h1:hover::before,
+h1:hover::after {
+	display: block;
+}
+.bg > span:hover {
+	display: none;
+}
+
+h1::before {
+	content: "";
+	display: block;
+	width: 40%;
+	height: 7px;
+	background: #000;
+	margin: 0px auto;
+	display: none;
+}
+h1::after {
+	content: "";
+	display: block;
+	width: 40%;
+	height: 7px;
+	background: #000;
+	margin: 0px auto;
+	display: none;
+}
+span:hover::after,
+span:hover::before {
+	background-color: red;
+
+	width: 50px;
+}
+
+.subtitel {
+	font-weight: 600;
+	line-height: 137%;
+	color: #ffffff;
+	margin-bottom: 300px;
+	display: inline-block;
+	padding: 0 20px;
+}
+.subtitel::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -20px;
+	margin-right: 5px;
+}
+.subtitel::after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -20px;
+	margin-left: 5px;
+}
+.subtitel:hover::after,
+.subtitel:hover::before {
+	background-color: #ffffff;
+}
+.subtitel:hover {
+	color: black;
+	font-weight: 700;
+}
+.header__scroll {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 136%;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.header__scroll:hover {
+	color: black;
+	font-weight: 700;
+}
+.header__scroll::after {
+	content: "";
+	max-width: 25px;
+	border-top: 20px solid black;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	display: block;
+	margin: 0px auto;
+	margin-top: 5px;
+}
+.header__scroll:hover::after {
+	content: "";
+	max-width: 25px;
+	border-top: 20px solid #ffffff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	display: block;
+	margin: 0px auto;
+	margin-top: 5px;
+}
+.header__nav {
+	padding: 24px 0;
+}
+.header__nav-logo {
+	display: inline-block;
+	margin-right: 420px;
+}
+.header__nav-list {
+	display: inline-block;
+}
+
+li.header__nav-text {
+	display: inline-block;
+	margin-left: 30px;
+}
+.header__nav-link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 133%;
+	letter-spacing: 1.1px;
+	color: #48555b;
+}
+/* ___________блок story___________________________ */
+.main {
+	padding-top: 58px;
+}
+.story {
+	padding-bottom: 60px;
+}
+.story__title {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 135%;
+	letter-spacing: 2.3px;
+	color: #48555b;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.story__text {
+	background: url("../img/Bitmap.png") 100% 100% no-repeat, url("../img/hend.png") 82% 100% no-repeat,
+		url("../img/desk.png") 64% 100% no-repeat;
+}
+.story__text p:first-of-type {
+	max-width: 405px;
+	font-weight: 700;
+	line-height: 135%;
+	letter-spacing: 0.2px;
+	color: #48555b;
+	margin-bottom: 30px;
+}
+.story__text span {
+	color: #00a4e5;
+}
+.story__text p:last-of-type {
+	max-width: 405px;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 175%;
+	letter-spacing: 0.2px;
+	color: #48555b;
+}
+/* ___________блок capa___________________________ */
+.capa {
+	padding: 60px 0px 115px 0px;
+}
+.capa__content {
+	margin-bottom: 78px;
+}
+.capa__title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 135%;
+	letter-spacing: 2.3px;
+	text-transform: uppercase;
+	color: #48555b;
+	display: inline-block;
+	vertical-align: top;
+}
+.capa__text {
+	font-size: 11px;
+	line-height: 172%;
+	letter-spacing: 0.2;
+	color: #48555b;
+	display: inline-block;
+	max-width: 405px;
+	margin-left: 155px;
+}
+.capa__btn {
+	font-size: 13px;
+	line-height: 135%;
+	background-color: #00a4e5;
+	padding: 11px 29px;
+	vertical-align: top;
+	color: #ffffff;
+	margin-left: 60px;
+}
+
+.capa__content-bottom {
+}
+.capa__items {
+	display: inline-block;
+	max-width: 295px;
+	border: 2px solid #e6e6e6;
+}
+.capa__items.center {
+	margin: 0px 50px;
+}
+.capa__item-img {
+	width: 100%;
+	height: 100px;
+	background: url("../img/bg01.png") 10% 50% no-repeat;
+	margin-bottom: 25px;
+}
+.capa__item-img.img__center {
+	background: url("../img/house.png") 10% 50% no-repeat;
+}
+.capa__item-img.img__right {
+	background: url("../img/dom.png") 10% 50% no-repeat;
+}
+.capa__item-title {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 0.43px;
+	color: #48555b;
+	text-transform: uppercase;
+	margin: 0px 22px 13px 22px;
+}
+.capa__item-text {
+	font-size: 13px;
+	line-height: 175%;
+	letter-spacing: 0.2px;
+	color: #48555b;
+	margin: 0px 22px 39px 22px;
+}
